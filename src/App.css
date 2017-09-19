@@ -1,0 +1,51 @@
+.App {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  height: 100%vh;
+}
+
+.gif-list {
+  display: flex;
+  list-style-type: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.main-title {
+  justify-content: center;
+  font-family: 'Fjalla One', sans-serif;
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+}
+
+.main-content {
+  align-items: center;
+  padding-top: 150px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  min-height: 50px;
+  z-index: 1000;
+  color: white;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+.gif-box {
+  max-width: 500px;
+  min-width: 300px;
+}
