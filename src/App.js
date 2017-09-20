@@ -3,7 +3,6 @@ import './App.css';
 import GifList from './Components/GifList.js';
 import SearchForm from './Components/SearchForm.js';
 import axios from 'axios';
-
 import config from './config';
 
 
@@ -30,7 +29,7 @@ class App extends Component {
     }
 
     searchGifs = (query) => {
-      axios.get('https://api.giphy.com/v1/gifs/search?api_key=xxJUg6PPAjewP7z7Mc8lhlelaYp6zTwQ&q=' + query + '&limit=24&offset=0&rating=G&lang=en')
+      axios.get('https://api.giphy.com/v1/gifs/search?api_key=' + config.apiKey + '&q=' + query + '&limit=24&offset=0&rating=G&lang=en')
       .then(res => {
         this.setState({
           gifs: res.data.data,
@@ -54,7 +53,7 @@ class App extends Component {
           <div className="main-content">
             {
               (this.state.loading) ? <p>Loading...</p> : <GifList data={ this.state.gifs }/>
-          }
+            }
         </div>
       </div>
     );
