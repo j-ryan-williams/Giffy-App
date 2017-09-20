@@ -16,7 +16,7 @@ class App extends Component {
     }
 
     componentDidMount() {
-      axios.get('https://api.giphy.com/v1/gifs/trending?api_key=' + config.apiKey + '&limit=25&rating=G')
+      axios.get('https://api.giphy.com/v1/gifs/trending?api_key=' + config.apiKey + '&limit=24&rating=G')
       .then(res => {
         this.setState({
           gifs: res.data.data,
@@ -46,7 +46,7 @@ class App extends Component {
         <div className="App">
           <div className="main-header">
             <div className="inner">
-              <h1 className="main-title">GiFinder</h1>
+              <h1 className="main-title">GIF FINDER</h1>
               <SearchForm onSearch={ this.searchGifs }/>
             </div>
           </div>

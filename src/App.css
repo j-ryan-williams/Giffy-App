@@ -2,8 +2,9 @@
   background-color: black;
   color: white;
   display: flex;
-  flex-direction: row;
-  height: 100%vh;
+  flex-direction: column;
+  height: 100%;
+  width: 100%
 }
 
 .gif-list {
@@ -15,38 +16,49 @@
 
 .main-title {
   justify-content: center;
-  font-family: 'Fjalla One', sans-serif;
+  font-size: 48px;
+  font-family: 'Anton', sans-serif;
   display: flex;
   flex-direction: row;
   height: 50px;
 }
 
 .main-content {
+  justify-content: center;
   align-items: center;
   padding-top: 150px;
   width: 100%;
   display: flex;
-  flex-direction: row;
 }
 
 .main-header {
   display: flex;
   justify-content: center;
-  top: 0;
-  left: 0;
   width: 100%;
   background-color: black;
-  min-height: 50px;
-  z-index: 1000;
   color: white;
 }
 
 form {
+  width: 100%;
+  background: white;
   display: flex;
-  justify-content: center;
+  border-radius: .2em;
+  border: solid 3px white;
+  box-shadow: 0 1px 14px rgba(0, 0, 0, .12);
 }
 
-.gif-box {
-  max-width: 500px;
-  min-width: 300px;
+form input {
+  padding: 12px;
+  font-size: 1.15em;
+  width: 100%;
+}
+
+form button {
+  padding: 0 1em;
+  font-size: 1.2em;
+  background: black;
+  color: white;
+  border-radius: .5em;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
